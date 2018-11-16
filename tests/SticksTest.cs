@@ -23,5 +23,11 @@ namespace SticksGame
             int expected = 11;
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ShouldThrowExceptionWhenArgumentIsOutOfRange()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(()=> sut.RemoveSticks(10));
+        }
     }
 }
