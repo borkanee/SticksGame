@@ -7,7 +7,7 @@ namespace SticksGame
     {
 
         [Fact]
-        public void constructor_should_be_called_without_parameters() {
+        public void sticksShouldBeInstantiatedWithoutParameters() {
             Sticks sut = new Sticks();
         }
     }
