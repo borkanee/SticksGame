@@ -15,7 +15,6 @@ namespace SticksGame
         [Fact]
         public void SticksShouldHaveTwentyOneSticksFromStart()
         {
-
             Sticks sut = new Sticks();
             int actual = sut.NumberOfSticks;
             int expected = 21;
