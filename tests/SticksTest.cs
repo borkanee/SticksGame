@@ -18,9 +18,9 @@ namespace SticksGame
         [Fact]
         public void ShouldRemoveSticks()
         {
-            sut.RemoveSticks(10);
+            sut.RemoveSticks(3);
             int actual = sut.Amount;
-            int expected = 11;
+            int expected = 18;
             Assert.Equal(expected, actual);
         }
 
