@@ -11,9 +11,9 @@ namespace SticksGame
             get { return _numberOfSticks; }
         }
 
-        internal void RemoveSticks(int v)
+        internal void RemoveSticks(int amount)
         {
-            throw new NotImplementedException();
+            _numberOfSticks -= amount;
         }
     }
 }
