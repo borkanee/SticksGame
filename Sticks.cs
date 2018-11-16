@@ -10,5 +10,10 @@ namespace SticksGame
         {
             get { return _numberOfSticks; }
         }
+
+        internal void RemoveSticks(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

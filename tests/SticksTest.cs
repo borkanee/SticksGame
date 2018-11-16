@@ -14,5 +14,14 @@ namespace SticksGame
             int expected = 21;
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ShouldRemoveSticks()
+        {
+            sut.RemoveSticks(10);
+            int actual = sut.NumberOfSticks;
+            int expected = 11;
+            Assert.Equal(expected, actual);
+        }
     }
 }
