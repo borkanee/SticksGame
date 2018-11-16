@@ -4,16 +4,16 @@ namespace SticksGame
 {
     class Sticks
     {
-        private int _numberOfSticks = 21;
+        private int _amount = 21;
 
-        public int NumberOfSticks 
+        public int Amount 
         {
-            get { return _numberOfSticks; }
+            get { return _amount; }
         }
 
         internal void RemoveSticks(int amount)
         {
-            _numberOfSticks -= amount;
+            _amount -= amount;
         }
     }
 }

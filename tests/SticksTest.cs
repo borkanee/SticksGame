@@ -10,7 +10,7 @@ namespace SticksGame
         [Fact]
         public void SticksShouldHaveTwentyOneSticksFromStart()
         {
-            int actual = sut.NumberOfSticks;
+            int actual = sut.Amount;
             int expected = 21;
             Assert.Equal(expected, actual);
         }
@@ -19,7 +19,7 @@ namespace SticksGame
         public void ShouldRemoveSticks()
         {
             sut.RemoveSticks(10);
-            int actual = sut.NumberOfSticks;
+            int actual = sut.Amount;
             int expected = 11;
             Assert.Equal(expected, actual);
         }
