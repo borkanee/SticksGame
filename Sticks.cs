@@ -11,8 +11,12 @@ namespace SticksGame
             get { return _amount; }
         }
 
-        internal void RemoveSticks(int amount)
+        public void RemoveSticks(int amount)
         {
+            if (amount > 4 || amount < 1) 
+            {
+                throw new ArgumentOutOfRangeException("You can only remove 1-4 sticks");
+            }
             _amount -= amount;
         }
     }
