@@ -7,7 +7,9 @@ namespace SticksGame
     {
         internal void Play(Sticks sticks)
         {
-            sticks.RemoveSticks(3);
+            int amountToRemove = 3;
+            if (sticks.Amount == 3) { amountToRemove = 2; }
+            sticks.RemoveSticks(amountToRemove);
         }
     }
 }
