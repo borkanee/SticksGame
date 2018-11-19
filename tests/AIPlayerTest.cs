@@ -28,5 +28,13 @@ namespace SticksGame
             sut.Play(sticksMock.Object);
             sticksMock.Verify(mock => mock.RemoveSticks(2));
         }
+
+        [Fact]
+        public void AIPlayerShouldRemoveOneStickIfTwoLeft()
+        {
+            sticksMock.SetupGet(mock => mock.Amount).Returns(2);
+            sut.Play(sticksMock.Object);
+            sticksMock.Verify(mock => mock.RemoveSticks(1));
+        }
     }
 }
