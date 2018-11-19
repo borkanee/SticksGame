@@ -4,14 +4,16 @@ namespace SticksGame
 {
     public class View
     {
+        private ConsoleWrapper _console;
 
         public View(ConsoleWrapper console)
         {
+            _console = console;
         }
 
         public void PresentInstructions()
         {
-            throw new NotImplementedException();
+            _console.WriteLine("Welcome!");
         }
     }
 }

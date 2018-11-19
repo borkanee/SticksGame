@@ -16,10 +16,10 @@ namespace SticksGame
         }
 
         [Fact]
-        public void TestName()
+        public void ViewShouldPresentInstructions()
         {
             sut.PresentInstructions();
-            consoleMock.Verify(mock => mock.WriteLine());
+            consoleMock.Verify(mock => mock.WriteLine("Welcome!"));
         }
     }
 }

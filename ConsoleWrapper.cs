@@ -5,9 +5,9 @@ namespace SticksGame
 {
     public class ConsoleWrapper
     {
-        public string WriteLine()
+        public virtual void WriteLine(string str)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(str);
         }
     }
 }
