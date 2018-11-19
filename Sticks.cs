@@ -6,7 +6,7 @@ namespace SticksGame
     {
         private int _amount = 21;
 
-        public int Amount 
+        public virtual int Amount 
         {
             get { return _amount; }
         }

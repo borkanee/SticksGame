@@ -14,14 +14,19 @@ namespace SticksGame
             sticksMock = new Mock<Sticks>();
         }
         
-        
-        
         [Fact]
         public void AIPlayerShouldCallRemoveSticks()
         {
-            sticksMock.Setup(mock => mock.RemoveSticks(3)).Verifiable();
             sut.Play(sticksMock.Object);
-            sticksMock.Verify();
+            sticksMock.Verify(mock => mock.RemoveSticks(3));
+        }
+
+        [Fact]
+        public void AIPlayerShouldRemoveTwoSticksIfThreeLeft()
+        {
+            sticksMock.SetupGet(mock => mock.Amount).Returns(3);
+            sut.Play(sticksMock.Object);
+            sticksMock.Verify(mock => mock.RemoveSticks(2));
         }
     }
 }
