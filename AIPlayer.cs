@@ -5,9 +5,9 @@ namespace SticksGame
 {
     class AIPlayer
     {
-        internal void Play(Mock<Sticks> sticksMock)
+        internal void Play(Sticks sticks)
         {
-            throw new NotImplementedException();
+            sticks.RemoveSticks(3);
         }
     }
 }
