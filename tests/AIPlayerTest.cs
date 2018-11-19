@@ -15,7 +15,7 @@ namespace SticksGame
         }
         
         [Fact]
-        public void AIPlayerShouldCallRemoveSticks()
+        public void AIPlayerShouldRemoveThreeSticks()
         {
             sut.Play(sticksMock.Object);
             sticksMock.Verify(mock => mock.RemoveSticks(3));
