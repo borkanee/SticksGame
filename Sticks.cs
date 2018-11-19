@@ -2,7 +2,7 @@ using System;
 
 namespace SticksGame
 {
-    class Sticks
+    public class Sticks
     {
         private int _amount = 21;
 
@@ -11,9 +11,9 @@ namespace SticksGame
             get { return _amount; }
         }
 
-        public void RemoveSticks(int amount)
+        public virtual void RemoveSticks(int amount)
         {
-            if (amount > 4 || amount < 1) 
+            if (amount > 4 || amount < 1)
             {
                 throw new ArgumentOutOfRangeException("You can only remove 1-4 sticks");
             }
