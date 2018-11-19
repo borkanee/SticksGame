@@ -6,13 +6,19 @@ namespace SticksGame
 {
     public class AIPlayerTest
     {
-        AIPlayer sut = new AIPlayer();
+        AIPlayer sut;
+        Mock<Sticks> sticksMock;
+        public AIPlayerTest()
+        {
+            sut = new AIPlayer();
+            sticksMock = new Mock<Sticks>();
+        }
+        
         
         
         [Fact]
-        public void AIPlayerShouldRemoveSticks()
+        public void AIPlayerShouldCallRemoveSticks()
         {
-            Mock<Sticks> sticksMock = new Mock<Sticks>();
             sticksMock.Setup(mock => mock.RemoveSticks(3)).Verifiable();
             sut.Play(sticksMock.Object);
             sticksMock.Verify();
