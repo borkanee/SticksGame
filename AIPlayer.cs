@@ -3,9 +3,9 @@ using Moq;
 
 namespace SticksGame
 {
-    class AIPlayer
+    public class AIPlayer
     {
-        internal void Play(Sticks sticks)
+        public void Play(Sticks sticks)
         {
             int amountToRemove = 3;
             if (sticks.Amount == 3) { amountToRemove = 2; }
