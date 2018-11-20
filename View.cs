@@ -21,12 +21,14 @@ namespace SticksGame
             int numberOfSticks = 0;
             bool isInt = false;
             bool validNumber = false;
+
             while (!(isInt && validNumber))
             {
                 _console.WriteLine("Please enter a valid number of sticks:");
                 isInt = int.TryParse(_console.ReadLine(), out numberOfSticks);
                 validNumber = numberOfSticks < 4 && numberOfSticks > 0;
             }
+            
             return numberOfSticks;
         }
 
