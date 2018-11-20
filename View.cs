@@ -20,6 +20,10 @@ namespace SticksGame
         {
             int number;
             bool isInt = int.TryParse(_console.ReadLine(), out number);
+            while (!isInt)
+            {
+                isInt = int.TryParse(_console.ReadLine(), out number);
+            }
             return number;
         }
     }
