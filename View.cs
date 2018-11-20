@@ -16,9 +16,11 @@ namespace SticksGame
             _console.WriteLine("Welcome! Enter the number of sticks you want to take (1-3):");
         }
 
-        public void GetInput()
+        public int GetInput()
         {
-            _console.ReadLine();
+            int number;
+            bool isInt = int.TryParse(_console.ReadLine(), out number);
+            return number;
         }
     }
 }
