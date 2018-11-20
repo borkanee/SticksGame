@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+
 using Moq;
 
 namespace SticksGame
@@ -8,6 +9,7 @@ namespace SticksGame
     {
         View sut;
         Mock<ConsoleWrapper> consoleMock;
+        Mock<Sticks> sticksMock;
 
         public ViewTest()
         {
@@ -43,6 +45,15 @@ namespace SticksGame
             consoleMock.SetupSequence(mock => mock.ReadLine()).Returns("0").Returns("1");
             int actual = sut.GetInput();
             consoleMock.Verify(mock => mock.WriteLine("Please enter a valid number of sticks:"));
+        }
+
+        [Fact]
+        public void ViewShouldPresentNumberOfSticksLeft()
+        {
+            sticksMock = new Mock<Sticks>();
+            sticksMock.SetupGet(mock => mock.Amount).Returns(10);
+            sut.PresentNumberOfSticksLeft(sticksMock.Object);
+            consoleMock.Verify(mock => mock.WriteLine("There are 10 number of sticks left!"));
         }
     }
 }

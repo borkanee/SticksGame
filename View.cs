@@ -29,5 +29,10 @@ namespace SticksGame
             }
             return numberOfSticks;
         }
+
+        public void PresentNumberOfSticksLeft(Sticks sticks)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
