@@ -40,7 +40,8 @@ namespace SticksGame
         [Fact]
         public void ViewShouldPresentInformationIfWrongInput()
         {
-            consoleMock.Setup(mock => mock.ReadLine()).Returns("0");
+            consoleMock.SetupSequence(mock => mock.ReadLine()).Returns("0").Returns("1");
+            int actual = sut.GetInput();
             consoleMock.Verify(mock => mock.WriteLine("Please enter a valid number of sticks:"));
         }
     }
