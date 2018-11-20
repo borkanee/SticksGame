@@ -28,13 +28,18 @@ namespace SticksGame
                 isInt = int.TryParse(_console.ReadLine(), out numberOfSticks);
                 validNumber = numberOfSticks < 4 && numberOfSticks > 0;
             }
-            
+
             return numberOfSticks;
         }
 
         public void PresentNumberOfSticksLeft(Sticks sticks)
         {
             _console.WriteLine($"There are {sticks.Amount} number of sticks left!");
+        }
+
+        public void PresentWinner(string winner)
+        {
+            throw new NotImplementedException();
         }
     }
 }

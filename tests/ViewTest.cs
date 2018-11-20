@@ -55,5 +55,12 @@ namespace SticksGame
             sut.PresentNumberOfSticksLeft(sticksMock.Object);
             consoleMock.Verify(mock => mock.WriteLine("There are 10 number of sticks left!"));
         }
+
+        [Fact]
+        public void ViewShouldPresentWinner()
+        {
+            sut.PresentWinner("AI");
+            consoleMock.Verify(mock => mock.WriteLine("AI won the game!"));
+        }
     }
 }
