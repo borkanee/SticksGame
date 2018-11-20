@@ -23,13 +23,6 @@ namespace SticksGame
         }
 
         [Fact]
-        public void ViewShouldCallReadLine()
-        {
-            sut.GetInput();
-            consoleMock.Verify(mock => mock.ReadLine());
-        }
-
-        [Fact]
         public void ViewShouldGetInput()
         {
             consoleMock.Setup(mock => mock.ReadLine()).Returns("1");
