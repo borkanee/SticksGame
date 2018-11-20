@@ -13,7 +13,7 @@ namespace SticksGame
 
         public void PresentInstructions()
         {
-            _console.WriteLine("Welcome!");
+            _console.WriteLine("Welcome! Enter the number of sticks you want to take (1-3):");
         }
     }
 }

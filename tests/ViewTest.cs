@@ -19,7 +19,7 @@ namespace SticksGame
         public void ViewShouldPresentInstructions()
         {
             sut.PresentInstructions();
-            consoleMock.Verify(mock => mock.WriteLine("Welcome!"));
+            consoleMock.Verify(mock => mock.WriteLine("Welcome! Enter the number of sticks you want to take (1-3):"));
         }
     }
 }
