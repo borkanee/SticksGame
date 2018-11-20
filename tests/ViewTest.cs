@@ -21,5 +21,12 @@ namespace SticksGame
             sut.PresentInstructions();
             consoleMock.Verify(mock => mock.WriteLine("Welcome! Enter the number of sticks you want to take (1-3):"));
         }
+
+        [Fact]
+        public void ViewShouldCallReadLine()
+        {
+            sut.GetInput();
+            consoleMock.Verify(mock => mock.ReadLine());
+        }
     }
 }

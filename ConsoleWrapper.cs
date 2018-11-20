@@ -9,5 +9,10 @@ namespace SticksGame
         {
             Console.WriteLine(str);
         }
+
+        public virtual string ReadLine()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
