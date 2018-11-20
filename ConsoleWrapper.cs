@@ -12,7 +12,7 @@ namespace SticksGame
 
         public virtual string ReadLine()
         {
-            throw new NotImplementedException();
+            return Console.ReadLine();
         }
     }
 }
