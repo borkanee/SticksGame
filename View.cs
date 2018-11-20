@@ -20,9 +20,11 @@ namespace SticksGame
         {
             int number = 0;
             bool isInt = false;
-            while (!isInt)
+            bool validNumber = false;
+            while (!(isInt && validNumber))
             {
                 isInt = int.TryParse(_console.ReadLine(), out number);
+                validNumber = number < 4 && number > 0;
             }
             return number;
         }
