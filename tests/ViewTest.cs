@@ -41,5 +41,16 @@ namespace SticksGame
             int expected = 1;
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ViewShouldOnlyAcceptIntegersBetweenOneAndThree()
+        {
+            consoleMock.SetupSequence(mock => mock.ReadLine())
+                .Returns("4")
+                .Returns("3");
+            int actual = sut.GetInput();
+            int expected = 3;
+            Assert.Equal(expected, actual);
+        }
     }
 }
