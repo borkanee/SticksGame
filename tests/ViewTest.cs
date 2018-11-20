@@ -36,5 +36,12 @@ namespace SticksGame
             int expected = 3;
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ViewShouldPresentInformationIfWrongInput()
+        {
+            consoleMock.Setup(mock => mock.ReadLine()).Returns("0");
+            consoleMock.Verify(mock => mock.WriteLine("Please enter a valid number of sticks:"));
+        }
     }
 }
