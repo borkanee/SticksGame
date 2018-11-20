@@ -23,29 +23,13 @@ namespace SticksGame
         }
 
         [Fact]
-        public void ViewShouldGetInput()
-        {
-            consoleMock.Setup(mock => mock.ReadLine()).Returns("1");
-            int actual = sut.GetInput();
-            int expected = 1;
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
-        public void ViewShouldOnlyAcceptIntegers()
+        public void ViewShouldOnlyAcceptAnIntegerBetweenOneAndThree()
         {
             consoleMock.SetupSequence(mock => mock.ReadLine())
-                .Returns("one")
-                .Returns("1");
-            int actual = sut.GetInput();
-            int expected = 1;
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
-        public void ViewShouldOnlyAcceptIntegersBetweenOneAndThree()
-        {
-            consoleMock.SetupSequence(mock => mock.ReadLine())
+                .Returns("0")
+                .Returns("-10")
+                .Returns(">+?")
+                .Returns("five")
                 .Returns("4")
                 .Returns("3");
             int actual = sut.GetInput();

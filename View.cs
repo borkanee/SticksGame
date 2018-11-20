@@ -18,15 +18,15 @@ namespace SticksGame
 
         public int GetInput()
         {
-            int number = 0;
+            int numberOfSticks = 0;
             bool isInt = false;
             bool validNumber = false;
             while (!(isInt && validNumber))
             {
-                isInt = int.TryParse(_console.ReadLine(), out number);
-                validNumber = number < 4 && number > 0;
+                isInt = int.TryParse(_console.ReadLine(), out numberOfSticks);
+                validNumber = numberOfSticks < 4 && numberOfSticks > 0;
             }
-            return number;
+            return numberOfSticks;
         }
     }
 }
