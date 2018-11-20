@@ -32,7 +32,7 @@ namespace SticksGame
 
         public void PresentNumberOfSticksLeft(Sticks sticks)
         {
-            throw new NotImplementedException();
+            _console.WriteLine($"There are {sticks.Amount} number of sticks left!");
         }
     }
 }
