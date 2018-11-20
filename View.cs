@@ -39,7 +39,7 @@ namespace SticksGame
 
         public void PresentWinner(string winner)
         {
-            throw new NotImplementedException();
+            _console.WriteLine($"{winner} won the game!");
         }
     }
 }
