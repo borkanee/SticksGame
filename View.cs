@@ -18,8 +18,8 @@ namespace SticksGame
 
         public int GetInput()
         {
-            int number;
-            bool isInt = int.TryParse(_console.ReadLine(), out number);
+            int number = 0;
+            bool isInt = false;
             while (!isInt)
             {
                 isInt = int.TryParse(_console.ReadLine(), out number);
