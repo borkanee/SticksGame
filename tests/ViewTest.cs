@@ -28,5 +28,14 @@ namespace SticksGame
             sut.GetInput();
             consoleMock.Verify(mock => mock.ReadLine());
         }
+
+        [Fact]
+        public void ViewShouldGetInput()
+        {
+            consoleMock.Setup(mock => mock.ReadLine()).Returns("1");
+            int actual = sut.GetInput();
+            int expected = 1;
+            Assert.Equal(expected, actual);
+        }
     }
 }
