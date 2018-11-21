@@ -14,5 +14,10 @@ namespace SticksGame
             _sticks = sticks;
             _AIPlayer = AIPlayer;
         }
+
+        public void Play()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

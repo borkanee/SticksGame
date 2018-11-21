@@ -16,12 +16,21 @@ namespace SticksGame.Tests
             viewMock = new Mock<View>(new Mock<ConsoleWrapper>().Object);
             sticksMock = new Mock<Sticks>();
             AIMock = new Mock<AIPlayer>();
+
+            sut = new Game(viewMock.Object, sticksMock.Object, AIMock.Object);
         }
 
         [Fact]
         public void GameShouldHaveThreeArguments()
         {
             sut = new Game(viewMock.Object, sticksMock.Object, AIMock.Object);
+        }
+
+        [Fact]
+        public void GameShouldCallView()
+        {
+            sut.Play();
+            viewMock.Verify(mock => mock.PresentInstructions());
         }
     }
 }
