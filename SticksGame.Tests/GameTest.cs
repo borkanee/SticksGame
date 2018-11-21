@@ -39,11 +39,23 @@ namespace SticksGame.Tests
         public void GameShouldPresentAIPlayerAsWinner()
         {
             sticksMock.SetupGet(mock => mock.Amount).Returns(0);
-            
+
             sut.Play();
 
             viewMock.Verify(mock => mock.PresentWinner("AIPlayer"));
 
+        }
+
+        [Fact]
+        public void GameShouldPresentPlayerAsWinner()
+        {
+            sticksMock.SetupSequence(mock => mock.Amount)
+            .Returns(3)
+            .Returns(0);
+
+            sut.Play();
+
+            viewMock.Verify(mock => mock.PresentWinner("Player"));
         }
     }
 }
