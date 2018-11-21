@@ -21,12 +21,6 @@ namespace SticksGame.Tests
         }
 
         [Fact]
-        public void GameShouldHaveThreeArguments()
-        {
-            sut = new Game(viewMock.Object, sticksMock.Object, AIMock.Object);
-        }
-
-        [Fact]
         public void GameShouldCallView()
         {
             sut.Play();
