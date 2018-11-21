@@ -18,6 +18,7 @@ namespace SticksGame
         public void Play()
         {
             _view.PresentInstructions();
+            _view.GetInput();
         }
     }
 }
