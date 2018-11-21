@@ -57,5 +57,21 @@ namespace SticksGame.Tests
 
             viewMock.Verify(mock => mock.PresentWinner("Player"));
         }
+
+        [Fact]
+        public void GameShouldRunThroughTheWholeLoop()
+        {
+            sticksMock.SetupSequence(mock => mock.Amount)
+            .Returns(10)
+            .Returns(10)
+            .Returns(10)
+            .Returns(10)
+            .Returns(10)
+            .Returns(0);
+            
+            sut.Play();
+    
+            viewMock.Verify(mock => mock.PresentWinner("AIPlayer"));
+        }
     }
 }
