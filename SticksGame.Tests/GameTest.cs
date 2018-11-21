@@ -33,5 +33,13 @@ namespace SticksGame.Tests
             sut.Play();
             viewMock.Verify(mock => mock.GetInput());
         }
+
+        [Fact]
+        public void GameShouldRemoveSticksFromPileAfterUserInput()
+        {
+            viewMock.Setup(mock => mock.GetInput()).Returns(3);
+            sut.Play();
+            sticksMock.Verify(mock => mock.RemoveSticks(3));
+        }
     }
 }
