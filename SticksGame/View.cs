@@ -16,7 +16,7 @@ namespace SticksGame
             _console.WriteLine("Welcome! Enter the number of sticks you want to take (1-3):");
         }
 
-        public int GetInput()
+        public virtual int GetInput()
         {
             int numberOfSticks = 0;
             bool isInt = false;

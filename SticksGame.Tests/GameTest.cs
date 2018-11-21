@@ -32,5 +32,12 @@ namespace SticksGame.Tests
             sut.Play();
             viewMock.Verify(mock => mock.PresentInstructions());
         }
+
+        [Fact]
+        public void GameShouldWaitForInput()
+        {
+            sut.Play();
+            viewMock.Verify(mock => mock.GetInput());
+        }
     }
 }
