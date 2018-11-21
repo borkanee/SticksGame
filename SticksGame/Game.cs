@@ -18,7 +18,9 @@ namespace SticksGame
         public void Play()
         {
             _view.PresentInstructions();
-            _view.GetInput();
+
+            int playerInput = _view.GetInput();
+            _sticks.RemoveSticks(playerInput);
         }
     }
 }
