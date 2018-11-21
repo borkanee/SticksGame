@@ -37,7 +37,7 @@ namespace SticksGame
             _console.WriteLine($"There are {sticks.Amount} number of sticks left!");
         }
 
-        public void PresentWinner(string winner)
+        public virtual void PresentWinner(string winner)
         {
             _console.WriteLine($"{winner} won the game!");
         }

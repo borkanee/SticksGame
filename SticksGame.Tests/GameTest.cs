@@ -34,5 +34,16 @@ namespace SticksGame.Tests
             sut.Play();
             sticksMock.Verify(mock => mock.RemoveSticks(3));
         }
+
+        [Fact]
+        public void GameShouldPresentAIPlayerAsWinner()
+        {
+            sticksMock.SetupGet(mock => mock.Amount).Returns(0);
+            
+            sut.Play();
+
+            viewMock.Verify(mock => mock.PresentWinner("AIPlayer"));
+
+        }
     }
 }
