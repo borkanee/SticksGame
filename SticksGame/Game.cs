@@ -22,12 +22,13 @@ namespace SticksGame
             while (true)
             {
                 _sticks.RemoveSticks(_view.GetInput());
-                
+
                 if (_sticks.Amount <= 0)
                 {
                     _view.PresentWinner("AIPlayer");
                     break;
                 }
+
                 _AIPlayer.Play(_sticks);
 
                 if (_sticks.Amount <= 0)
@@ -35,7 +36,6 @@ namespace SticksGame
                     _view.PresentWinner("Player");
                     break;
                 }
-
             }
         }
     }

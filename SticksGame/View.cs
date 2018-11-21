@@ -19,8 +19,8 @@ namespace SticksGame
         public virtual int GetInput()
         {
             int numberOfSticks = 0;
-            bool isInt = false;
-            bool validNumber = false;
+            bool isInt = int.TryParse(_console.ReadLine(), out numberOfSticks);
+            bool validNumber = numberOfSticks < 4 && numberOfSticks > 0;
 
             while (!(isInt && validNumber))
             {
