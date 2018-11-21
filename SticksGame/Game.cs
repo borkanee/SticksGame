@@ -21,6 +21,8 @@ namespace SticksGame
 
             int playerInput = _view.GetInput();
             _sticks.RemoveSticks(playerInput);
+
+            _view.PresentWinner("AIPlayer");
         }
     }
 }
