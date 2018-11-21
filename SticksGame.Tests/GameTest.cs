@@ -68,10 +68,18 @@ namespace SticksGame.Tests
             .Returns(10)
             .Returns(10)
             .Returns(0);
-            
+
             sut.Play();
-    
+
             viewMock.Verify(mock => mock.PresentWinner("AIPlayer"));
+        }
+
+        [Fact]
+        public void GameShouldPresentNumberOfSticksLeft()
+        {
+            sut.Play();
+
+            viewMock.Verify(mock => mock.PresentNumberOfSticksLeft(sticksMock.Object));
         }
     }
 }

@@ -32,7 +32,7 @@ namespace SticksGame
             return numberOfSticks;
         }
 
-        public void PresentNumberOfSticksLeft(Sticks sticks)
+        public virtual void PresentNumberOfSticksLeft(Sticks sticks)
         {
             _console.WriteLine($"There are {sticks.Amount} number of sticks left!");
         }

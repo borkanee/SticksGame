@@ -241,46 +241,62 @@
             "21": 2,
             "22": 2,
             "23": 2,
-            "25": 10,
-            "26": 8,
-            "27": 8,
-            "28": 8,
-            "29": 8,
-            "30": 8,
+            "25": 8,
+            "26": 6,
+            "27": 6,
+            "28": 6,
+            "29": 6,
+            "30": 6,
             "32": 2,
             "33": 2
           },
           "Branches": [
             {
-              "Line": 25,
-              "Offset": 67,
-              "EndOffset": 9,
-              "Path": 1,
-              "Ordinal": 3,
-              "Hits": 8
-            },
-            {
-              "Line": 29,
-              "Offset": 48,
-              "EndOffset": 50,
+              "Line": 23,
+              "Offset": 24,
+              "EndOffset": 26,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 7
+              "Hits": 2
+            },
+            {
+              "Line": 23,
+              "Offset": 24,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 94,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 6
             },
             {
               "Line": 29,
-              "Offset": 48,
-              "EndOffset": 56,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 5
+            },
+            {
+              "Line": 29,
+              "Offset": 75,
+              "EndOffset": 83,
               "Path": 1,
-              "Ordinal": 1,
+              "Ordinal": 3,
               "Hits": 1
             },
             {
               "Line": 25,
-              "Offset": 67,
-              "EndOffset": 69,
+              "Offset": 94,
+              "EndOffset": 96,
               "Path": 0,
-              "Ordinal": 2,
+              "Ordinal": 4,
               "Hits": 2
             }
           ]
