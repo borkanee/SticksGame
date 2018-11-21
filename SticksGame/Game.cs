@@ -19,10 +19,24 @@ namespace SticksGame
         {
             _view.PresentInstructions();
 
-            int playerInput = _view.GetInput();
-            _sticks.RemoveSticks(playerInput);
+            while (true)
+            {
+                _sticks.RemoveSticks(_view.GetInput());
+                
+                if (_sticks.Amount <= 0)
+                {
+                    _view.PresentWinner("AIPlayer");
+                    break;
+                }
+                _AIPlayer.Play(_sticks);
 
-            _view.PresentWinner("AIPlayer");
+                if (_sticks.Amount <= 0)
+                {
+                    _view.PresentWinner("Player");
+                    break;
+                }
+
+            }
         }
     }
 }
