@@ -68,6 +68,31 @@
         }
       }
     },
+    "/Users/boris/Desktop/WP/MJUKVARUTESTNING/SticksGame/SticksGame/Game.cs": {
+      "SticksGame.Game": {
+        "System.Void SticksGame.Game::Play()": {
+          "Lines": {
+            "19": 2,
+            "20": 2,
+            "22": 2,
+            "23": 2,
+            "24": 2
+          },
+          "Branches": []
+        },
+        "System.Void SticksGame.Game::.ctor(SticksGame.View,SticksGame.Sticks,SticksGame.AIPlayer)": {
+          "Lines": {
+            "11": 2,
+            "12": 2,
+            "13": 2,
+            "14": 2,
+            "15": 2,
+            "16": 2
+          },
+          "Branches": []
+        }
+      }
+    },
     "/Users/boris/Desktop/WP/MJUKVARUTESTNING/SticksGame/SticksGame/Program.cs": {
       "SticksGame.Program": {
         "System.Void SticksGame.Program::Main(System.String[])": {
@@ -134,7 +159,7 @@
         },
         "System.Void SticksGame.Sticks::.ctor()": {
           "Lines": {
-            "7": 7
+            "7": 9
           },
           "Branches": []
         }
@@ -218,10 +243,10 @@
         },
         "System.Void SticksGame.View::.ctor(SticksGame.ConsoleWrapper)": {
           "Lines": {
-            "9": 5,
-            "10": 5,
-            "11": 5,
-            "12": 5
+            "9": 7,
+            "10": 7,
+            "11": 7,
+            "12": 7
           },
           "Branches": []
         }

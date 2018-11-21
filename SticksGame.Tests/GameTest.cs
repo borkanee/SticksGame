@@ -28,13 +28,6 @@ namespace SticksGame.Tests
         }
 
         [Fact]
-        public void GameShouldWaitForInput()
-        {
-            sut.Play();
-            viewMock.Verify(mock => mock.GetInput());
-        }
-
-        [Fact]
         public void GameShouldRemoveSticksFromPileAfterUserInput()
         {
             viewMock.Setup(mock => mock.GetInput()).Returns(3);
