@@ -17,7 +17,7 @@ namespace SticksGame
 
         public void Play()
         {
-            throw new NotImplementedException();
+            _view.PresentInstructions();
         }
     }
 }
