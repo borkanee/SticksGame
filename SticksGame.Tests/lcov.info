@@ -122,54 +122,55 @@ FNF:3
 FNH:3
 end_of_record
 SF:/Users/boris/Desktop/WP/MJUKVARUTESTNING/SticksGame/SticksGame/View.cs
-FN:14,System.Void SticksGame.View::PresentInstructions()
+FN:15,System.Void SticksGame.View::PresentInstructions()
 FNDA:1,System.Void SticksGame.View::PresentInstructions()
-DA:15,1
 DA:16,1
 DA:17,1
-FN:19,System.Int32 SticksGame.View::GetInput()
+DA:18,1
+FN:20,System.Int32 SticksGame.View::GetInput()
 FNDA:2,System.Int32 SticksGame.View::GetInput()
-DA:20,2
 DA:21,2
 DA:22,2
 DA:23,2
-DA:25,9
-DA:26,7
+DA:24,2
+DA:26,9
 DA:27,7
 DA:28,7
 DA:29,7
 DA:30,7
-DA:32,2
+DA:31,7
 DA:33,2
-BRDA:23,24,0,1
-BRDA:23,24,1,1
-BRDA:25,94,1,7
-BRDA:29,75,0,6
-BRDA:29,75,1,1
-BRDA:25,94,0,2
-FN:35,System.Void SticksGame.View::PresentNumberOfSticksLeft(SticksGame.Sticks)
+DA:34,2
+BRDA:24,24,0,1
+BRDA:24,24,1,1
+BRDA:26,94,1,7
+BRDA:30,75,0,6
+BRDA:30,75,1,1
+BRDA:26,94,0,2
+FN:36,System.Void SticksGame.View::PresentNumberOfSticksLeft(SticksGame.Sticks)
 FNDA:1,System.Void SticksGame.View::PresentNumberOfSticksLeft(SticksGame.Sticks)
-DA:36,1
 DA:37,1
 DA:38,1
-FN:40,System.Void SticksGame.View::PresentWinner(System.String)
+DA:39,1
+FN:41,System.Void SticksGame.View::PresentWinner(System.String)
 FNDA:1,System.Void SticksGame.View::PresentWinner(System.String)
-DA:41,1
 DA:42,1
 DA:43,1
-FN:45,System.Void SticksGame.View::DisplayAIPlayerAsCurrentPlayer()
+DA:44,1
+FN:46,System.Void SticksGame.View::DisplayAIPlayerAsCurrentPlayer()
 FNDA:1,System.Void SticksGame.View::DisplayAIPlayerAsCurrentPlayer()
-DA:46,1
 DA:47,1
 DA:48,1
-FN:8,System.Void SticksGame.View::.ctor(SticksGame.ConsoleWrapper)
+DA:49,1
+DA:50,1
+FN:9,System.Void SticksGame.View::.ctor(SticksGame.ConsoleWrapper)
 FNDA:12,System.Void SticksGame.View::.ctor(SticksGame.ConsoleWrapper)
-DA:9,12
 DA:10,12
 DA:11,12
 DA:12,12
-LF:28
-LH:28
+DA:13,12
+LF:29
+LH:29
 BRF:6
 BRH:6
 FNF:6

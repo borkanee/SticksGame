@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 namespace SticksGame
 {
@@ -44,7 +45,8 @@ namespace SticksGame
 
         public void DisplayAIPlayerAsCurrentPlayer()
         {
-             _console.WriteLine("AI plays...");
+            _console.WriteLine("AI plays...");
+            Thread.Sleep(2000);
         }
     }
 }
