@@ -85,6 +85,11 @@ namespace SticksGame.Tests
         [Fact]
         public void GameShouldDisplayAIAsCurrentPlayer()
         {
+            sticksMock.SetupSequence(mock => mock.Amount)
+            .Returns(10)
+            .Returns(10)
+            .Returns(0);
+
             sut.Play();
 
             viewMock.Verify(mock => mock.DisplayAIPlayerAsCurrentPlayer());
