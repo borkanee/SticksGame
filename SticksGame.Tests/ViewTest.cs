@@ -27,6 +27,7 @@ namespace SticksGame.Tests
         public void ViewShouldOnlyAcceptAnIntegerBetweenOneAndThree()
         {
             consoleMock.SetupSequence(mock => mock.ReadLine())
+                .Returns("5")
                 .Returns("0")
                 .Returns("-10")
                 .Returns(">+?")

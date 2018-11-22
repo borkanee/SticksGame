@@ -25,7 +25,7 @@ namespace SticksGame
 
                 _view.PresentNumberOfSticksLeft(_sticks);
 
-                if (_sticks.Amount <= 0)
+                if (_sticks.Amount <= 0)    
                 {
                     _view.PresentWinner("AIPlayer");
                     break;
