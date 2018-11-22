@@ -44,7 +44,7 @@ namespace SticksGame
 
         public void DisplayAIPlayerAsCurrentPlayer()
         {
-            throw new NotImplementedException();
+             _console.WriteLine("AI plays...");
         }
     }
 }

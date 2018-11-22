@@ -157,16 +157,21 @@ FNDA:1,System.Void SticksGame.View::PresentWinner(System.String)
 DA:41,1
 DA:42,1
 DA:43,1
+FN:45,System.Void SticksGame.View::DisplayAIPlayerAsCurrentPlayer()
+FNDA:1,System.Void SticksGame.View::DisplayAIPlayerAsCurrentPlayer()
+DA:46,1
+DA:47,1
+DA:48,1
 FN:8,System.Void SticksGame.View::.ctor(SticksGame.ConsoleWrapper)
-FNDA:11,System.Void SticksGame.View::.ctor(SticksGame.ConsoleWrapper)
-DA:9,11
-DA:10,11
-DA:11,11
-DA:12,11
-LF:25
-LH:25
+FNDA:12,System.Void SticksGame.View::.ctor(SticksGame.ConsoleWrapper)
+DA:9,12
+DA:10,12
+DA:11,12
+DA:12,12
+LF:28
+LH:28
 BRF:6
 BRH:6
-FNF:5
-FNH:5
+FNF:6
+FNH:6
 end_of_record
