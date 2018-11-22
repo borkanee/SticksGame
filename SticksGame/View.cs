@@ -43,7 +43,7 @@ namespace SticksGame
             _console.WriteLine($"{winner} won the game!");
         }
 
-        public void DisplayAIPlayerAsCurrentPlayer()
+        public virtual void DisplayAIPlayerAsCurrentPlayer()
         {
             _console.WriteLine("AI plays...");
             Thread.Sleep(2000);

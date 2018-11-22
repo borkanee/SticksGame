@@ -81,5 +81,13 @@ namespace SticksGame.Tests
 
             viewMock.Verify(mock => mock.PresentNumberOfSticksLeft(sticksMock.Object));
         }
+
+        [Fact]
+        public void GameShouldDisplayAIAsCurrentPlayer()
+        {
+            sut.Play();
+
+            viewMock.Verify(mock => mock.DisplayAIPlayerAsCurrentPlayer());
+        }
     }
 }
