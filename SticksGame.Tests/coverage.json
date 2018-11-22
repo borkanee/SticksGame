@@ -4,12 +4,12 @@
       "SticksGame.AIPlayer": {
         "System.Void SticksGame.AIPlayer::Play(SticksGame.Sticks)": {
           "Lines": {
-            "8": 5,
-            "9": 5,
-            "10": 8,
-            "11": 7,
-            "12": 5,
-            "13": 5
+            "8": 6,
+            "9": 6,
+            "10": 9,
+            "11": 8,
+            "12": 6,
+            "13": 6
           },
           "Branches": [
             {
@@ -26,7 +26,7 @@
               "EndOffset": 22,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 4
+              "Hits": 5
             },
             {
               "Line": 11,
@@ -34,7 +34,7 @@
               "EndOffset": 31,
               "Path": 0,
               "Ordinal": 2,
-              "Hits": 3
+              "Hits": 4
             },
             {
               "Line": 11,
@@ -58,7 +58,7 @@
               "EndOffset": 51,
               "Path": 1,
               "Ordinal": 5,
-              "Hits": 5
+              "Hits": 6
             }
           ]
         }
@@ -88,52 +88,55 @@
       "SticksGame.Game": {
         "System.Void SticksGame.Game::Play()": {
           "Lines": {
-            "19": 5,
-            "20": 5,
-            "22": 6,
-            "23": 6,
-            "24": 6,
-            "26": 6,
-            "27": 4,
-            "28": 4,
-            "29": 4,
-            "32": 2,
-            "34": 2,
-            "35": 1,
-            "36": 1,
-            "37": 1,
-            "39": 1,
-            "40": 5
+            "19": 7,
+            "20": 7,
+            "22": 8,
+            "23": 8,
+            "24": 8,
+            "26": 8,
+            "28": 8,
+            "29": 5,
+            "30": 5,
+            "31": 5,
+            "34": 3,
+            "36": 3,
+            "38": 3,
+            "40": 3,
+            "41": 2,
+            "42": 2,
+            "43": 2,
+            "45": 1,
+            "46": 7
           },
           "Branches": [
             {
-              "Line": 26,
-              "Offset": 58,
-              "EndOffset": 60,
+              "Line": 28,
+              "Offset": 79,
+              "EndOffset": 81,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 4
+              "Hits": 5
             },
             {
-              "Line": 26,
-              "Offset": 58,
-              "EndOffset": 80,
+              "Line": 28,
+              "Offset": 79,
+              "EndOffset": 101,
               "Path": 1,
               "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 40,
+              "Offset": 168,
+              "EndOffset": 170,
+              "Path": 0,
+              "Ordinal": 2,
               "Hits": 2
             },
             {
-              "Line": 34,
-              "Offset": 117,
-              "EndOffset": 119,
-              "Path": 0,
-              "Ordinal": 2,
-              "Hits": 1
-            },
-            {
-              "Line": 34,
-              "Offset": 117,
-              "EndOffset": 139,
+              "Line": 40,
+              "Offset": 168,
+              "EndOffset": 190,
               "Path": 1,
               "Ordinal": 3,
               "Hits": 1
@@ -142,12 +145,12 @@
         },
         "System.Void SticksGame.Game::.ctor(SticksGame.View,SticksGame.Sticks,SticksGame.AIPlayer)": {
           "Lines": {
-            "11": 5,
-            "12": 5,
-            "13": 5,
-            "14": 5,
-            "15": 5,
-            "16": 5
+            "11": 7,
+            "12": 7,
+            "13": 7,
+            "14": 7,
+            "15": 7,
+            "16": 7
           },
           "Branches": []
         }
@@ -159,7 +162,11 @@
           "Lines": {
             "8": 0,
             "9": 0,
-            "10": 0
+            "10": 0,
+            "11": 0,
+            "13": 0,
+            "15": 0,
+            "16": 0
           },
           "Branches": []
         }
@@ -219,7 +226,7 @@
         },
         "System.Void SticksGame.Sticks::.ctor()": {
           "Lines": {
-            "7": 12
+            "7": 14
           },
           "Branches": []
         }
@@ -229,62 +236,62 @@
       "SticksGame.View": {
         "System.Void SticksGame.View::PresentInstructions()": {
           "Lines": {
-            "15": 1,
             "16": 1,
-            "17": 1
+            "17": 1,
+            "18": 1
           },
           "Branches": []
         },
         "System.Int32 SticksGame.View::GetInput()": {
           "Lines": {
-            "20": 2,
             "21": 2,
             "22": 2,
             "23": 2,
-            "25": 8,
-            "26": 6,
-            "27": 6,
-            "28": 6,
-            "29": 6,
-            "30": 6,
-            "32": 2,
-            "33": 2
+            "24": 2,
+            "26": 9,
+            "27": 7,
+            "28": 7,
+            "29": 7,
+            "30": 7,
+            "31": 7,
+            "33": 2,
+            "34": 2
           },
           "Branches": [
             {
-              "Line": 23,
+              "Line": 24,
               "Offset": 24,
               "EndOffset": 26,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 2
+              "Hits": 1
             },
             {
-              "Line": 23,
+              "Line": 24,
               "Offset": 24,
               "EndOffset": 32,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 0
+              "Hits": 1
             },
             {
-              "Line": 25,
+              "Line": 26,
               "Offset": 94,
               "EndOffset": 36,
               "Path": 1,
               "Ordinal": 5,
-              "Hits": 6
+              "Hits": 7
             },
             {
-              "Line": 29,
+              "Line": 30,
               "Offset": 75,
               "EndOffset": 77,
               "Path": 0,
               "Ordinal": 2,
-              "Hits": 5
+              "Hits": 6
             },
             {
-              "Line": 29,
+              "Line": 30,
               "Offset": 75,
               "EndOffset": 83,
               "Path": 1,
@@ -292,7 +299,7 @@
               "Hits": 1
             },
             {
-              "Line": 25,
+              "Line": 26,
               "Offset": 94,
               "EndOffset": 96,
               "Path": 0,
@@ -303,26 +310,35 @@
         },
         "System.Void SticksGame.View::PresentNumberOfSticksLeft(SticksGame.Sticks)": {
           "Lines": {
-            "36": 1,
             "37": 1,
-            "38": 1
+            "38": 1,
+            "39": 1
           },
           "Branches": []
         },
         "System.Void SticksGame.View::PresentWinner(System.String)": {
           "Lines": {
-            "41": 1,
             "42": 1,
-            "43": 1
+            "43": 1,
+            "44": 1
+          },
+          "Branches": []
+        },
+        "System.Void SticksGame.View::DisplayAIPlayerAsCurrentPlayer()": {
+          "Lines": {
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1
           },
           "Branches": []
         },
         "System.Void SticksGame.View::.ctor(SticksGame.ConsoleWrapper)": {
           "Lines": {
-            "9": 10,
-            "10": 10,
-            "11": 10,
-            "12": 10
+            "10": 13,
+            "11": 13,
+            "12": 13,
+            "13": 13
           },
           "Branches": []
         }
