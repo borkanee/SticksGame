@@ -62,5 +62,12 @@ namespace SticksGame.Tests
             sut.PresentWinner("AI");
             consoleMock.Verify(mock => mock.WriteLine("AI won the game!"));
         }
+
+        [Fact]
+        public void ViewShouldDisplayWhenAIPlayerIsPlaying()
+        {
+            sut.DisplayAIPlayerAsCurrentPlayer();
+            consoleMock.Verify(mock => mock.WriteLine("AI plays..."));
+        }
     }
 }

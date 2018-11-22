@@ -41,5 +41,10 @@ namespace SticksGame
         {
             _console.WriteLine($"{winner} won the game!");
         }
+
+        public void DisplayAIPlayerAsCurrentPlayer()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
