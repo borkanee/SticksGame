@@ -9,12 +9,12 @@ namespace SticksGame
             return new View(new ConsoleWrapper());
         }
 
-        public object GetNewSticks()
+        public Sticks GetNewSticks()
         {
             return new Sticks();
         }
 
-        public object GetNewAIPlayer()
+        public AIPlayer GetNewAIPlayer()
         {
             return new AIPlayer();
         }
