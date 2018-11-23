@@ -107,12 +107,9 @@ FN:7,System.Void SticksGame.Program::Main(System.String[])
 FNDA:0,System.Void SticksGame.Program::Main(System.String[])
 DA:8,0
 DA:9,0
-DA:10,0
 DA:11,0
-DA:13,0
-DA:15,0
-DA:16,0
-LF:7
+DA:12,0
+LF:4
 LH:0
 BRF:0
 BRH:0
@@ -136,8 +133,8 @@ BRDA:16,3,1,1
 BRDA:16,14,0,1
 BRDA:16,14,1,1
 FN:6,System.Void SticksGame.Sticks::.ctor()
-FNDA:17,System.Void SticksGame.Sticks::.ctor()
-DA:7,17
+FNDA:18,System.Void SticksGame.Sticks::.ctor()
+DA:7,18
 LF:8
 LH:8
 BRF:4
