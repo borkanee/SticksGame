@@ -16,7 +16,7 @@ namespace SticksGame
 
         public object GetNewAIPlayer()
         {
-            throw new NotImplementedException();
+            return new AIPlayer();
         }
     }
 }
