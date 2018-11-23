@@ -35,6 +35,24 @@ namespace SticksGame.Tests
         }
 
         [Fact]
+        public void GameShouldCallFactoryNewSticks()
+        {
+            var factoryMock = new Mock<Factory>();
+            var sut = new Game(factoryMock.Object);
+
+            factoryMock.Verify(mock => mock.GetNewSticks());
+        }
+
+        [Fact]
+        public void GameShouldCallFactoryNewAI()
+        {
+            var factoryMock = new Mock<Factory>();
+            var sut = new Game(factoryMock.Object);
+
+            factoryMock.Verify(mock => mock.GetNewAIPlayer());
+        }
+
+        [Fact]
         public void GameShouldCallView()
         {
             sut.Play();
