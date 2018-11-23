@@ -8,5 +8,10 @@ namespace SticksGame
         {
             return new View(new ConsoleWrapper());
         }
+
+        public object GetNewSticks()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

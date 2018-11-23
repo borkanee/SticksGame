@@ -18,5 +18,13 @@ namespace SticksGame.Tests
 
             Assert.IsType<View>(actual);
         }
+
+        [Fact]
+        public void FactoryShouldReturnSticksObject()
+        {
+            var actual = sut.GetNewSticks();
+
+            Assert.IsType<Sticks>(actual);
+        }
     }
 }
