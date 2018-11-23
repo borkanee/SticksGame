@@ -8,11 +8,11 @@ namespace SticksGame
         private Sticks _sticks;
         private AIPlayer _AIPlayer;
 
-        public Game(View view, Sticks sticks, AIPlayer AIPlayer)
+        public Game(Factory factory)
         {
-            _view = view;
-            _sticks = sticks;
-            _AIPlayer = AIPlayer;
+            _view = factory.GetNewView();
+            _sticks = factory.GetNewSticks();
+            _AIPlayer = factory.GetNewAIPlayer();
         }
 
         public void Play()

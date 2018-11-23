@@ -17,20 +17,21 @@ namespace SticksGame.Tests
             sticksMock = new Mock<Sticks>();
             AIMock = new Mock<AIPlayer>();
 
-            sut = new Game(viewMock.Object, sticksMock.Object, AIMock.Object);
+            Mock<Factory> factoryMock = new Mock<Factory>();
+            factoryMock.Setup(mock => mock.GetNewView()).Returns(viewMock.Object);
+            factoryMock.Setup(mock => mock.GetNewSticks()).Returns(sticksMock.Object);
+            factoryMock.Setup(mock => mock.GetNewAIPlayer()).Returns(AIMock.Object);
+
+            sut = new Game(factoryMock.Object);
         }
 
         [Fact]
-        public void GameShouldCallFactoryMethods()
+        public void GameShouldCallFactoryNewView()
         {
-            var sut = new Game(viewMock.Object, sticksMock.Object, AIMock.Object);
             var factoryMock = new Mock<Factory>();
+            var sut = new Game(factoryMock.Object);
 
-            factoryMock.Setup(x => x.GetNewAIPlayer()).Verifiable();
-            factoryMock.Setup(x => x.GetNewSticks()).Verifiable();
-            factoryMock.Setup(x => x.GetNewView()).Verifiable();
-
-            factoryMock.VerifyAll();
+            factoryMock.Verify(mock => mock.GetNewView());
         }
 
         [Fact]

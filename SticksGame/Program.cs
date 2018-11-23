@@ -10,7 +10,7 @@ namespace SticksGame
             Sticks sticks = new Sticks();
             AIPlayer AIPlayer = new AIPlayer();
 
-            Game game = new Game(view, sticks, AIPlayer);
+            Game game = new Game(new Factory());
 
             game.Play();
         }
