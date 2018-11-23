@@ -11,7 +11,7 @@ namespace SticksGame
 
         public object GetNewSticks()
         {
-            throw new NotImplementedException();
+            return new Sticks();
         }
     }
 }
