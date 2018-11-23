@@ -21,6 +21,19 @@ namespace SticksGame.Tests
         }
 
         [Fact]
+        public void GameShouldCallFactoryMethods()
+        {
+            var sut = new Game(viewMock.Object, sticksMock.Object, AIMock.Object);
+            var factoryMock = new Mock<Factory>();
+
+            factoryMock.Setup(x => x.GetNewAIPlayer()).Verifiable();
+            factoryMock.Setup(x => x.GetNewSticks()).Verifiable();
+            factoryMock.Setup(x => x.GetNewView()).Verifiable();
+
+            factoryMock.VerifyAll();
+        }
+
+        [Fact]
         public void GameShouldCallView()
         {
             sut.Play();

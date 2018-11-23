@@ -4,17 +4,17 @@ namespace SticksGame
 {
     public class Factory
     {
-        public View GetNewView()
+        public virtual View GetNewView()
         {
             return new View(new ConsoleWrapper());
         }
 
-        public Sticks GetNewSticks()
+        public virtual Sticks GetNewSticks()
         {
             return new Sticks();
         }
 
-        public AIPlayer GetNewAIPlayer()
+        public virtual AIPlayer GetNewAIPlayer()
         {
             return new AIPlayer();
         }
