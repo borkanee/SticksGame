@@ -13,5 +13,10 @@ namespace SticksGame
         {
             return new Sticks();
         }
+
+        public object GetNewAIPlayer()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -26,5 +26,13 @@ namespace SticksGame.Tests
 
             Assert.IsType<Sticks>(actual);
         }
+
+        [Fact]
+        public void FactoryShouldReturnAIPlayerObject()
+        {
+            var actual = sut.GetNewAIPlayer();
+
+            Assert.IsType<AIPlayer>(actual);
+        }
     }
 }
