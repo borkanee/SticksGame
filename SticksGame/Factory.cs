@@ -4,9 +4,9 @@ namespace SticksGame
 {
     public class Factory
     {
-        public object GetNewView()
+        public View GetNewView()
         {
-            throw new NotImplementedException();
+            return new View(new ConsoleWrapper());
         }
     }
 }
